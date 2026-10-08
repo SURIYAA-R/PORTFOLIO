@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- =====================================================================
+       SEO & OPEN GRAPH META TAGS
+       ===================================================================== -->
+  <title>Suriyaa R | Web Technology Consultant | B.Tech IT</title>
+  <meta name="description" content="Portfolio of Suriyaa R - B.Tech Information Technology student at KRCT and aspiring Web Technology Consultant. Specializing in web architecture, front-end ecosystems, and backend performance.">
+  <meta name="keywords" content="Suriyaa R, Web Technology Consultant, B.Tech IT, KRCT, Java, PHP, JavaScript, Frontend, Backend, Portfolio">
+  <meta name="author" content="Suriyaa R">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suriyaa R | Web Technology Consultant">
+  <meta property="og:description" content="Evaluating emerging web technologies, advising on architectural trade-offs, and guiding front-end and back-end implementation.">
+  <meta property="og:url" content="https://suriyaa-r.github.io/">
+  <meta property="og:site_name" content="Suriyaa R Portfolio">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suriyaa R | Web Technology Consultant">
+  <meta name="twitter:description" content="Evaluating emerging web technologies, advising on architectural trade-offs, and guiding front-end and back-end implementation.">
+
+  <!-- =====================================================================
+       GOOGLE FONTS (Strictly 2 fonts: Space Grotesk + Inter)
+       ===================================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       ACCESSIBILITY: SKIP LINK FOR KEYBOARD USERS
+       ===================================================================== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =====================================================================
+       GLASS ACCENT 1 OF 3: FLOATING NAVBAR
+       Glass navbar floating over the bold accent-colored block in the hero.
+       ===================================================================== -->
+  <header class="navbar-wrapper">
+    <div class="navbar-container">
+      <nav class="glass-navbar" aria-label="Primary navigation">
+        <a href="#hero" class="nav-brand" aria-label="Suriyaa R Home">
+          <span>SURIYAA R</span>
+          <span class="brand-badge">CONSULTANT</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle Button -->
+        <button type="button" 
+                class="nav-toggle" 
+                id="navToggle" 
+                aria-expanded="false" 
+                aria-controls="navMenu" 
+                aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navMenu">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta-item">
+            <a href="assets/resume.pdf" class="btn btn-sm btn-primary" download="Suriyaa_R_Resume.pdf">Resume</a>
+          </li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-sm btn-black">Hire / Consult</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       MAIN CONTENT CONTAINER
+       ===================================================================== -->
+  <main id="main-content">
+
+    <!-- ===================================================================
+         HERO SECTION: SIGNATURE ELEMENT
+         Giant typography with glass navbar resting over the bold accent block
+         =================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title-heading">
+      <!-- Signature bold electric blue background block -->
+      <div class="hero-accent-block" aria-hidden="true"></div>
+
+      <div class="container hero-content hero-reveal">
+        <!-- Status Pill -->
+        <div class="hero-role-pill">
+          <span class="role-pulse" aria-hidden="true"></span>
+          <span>Open for Web Consulting &amp; Tech Opportunities</span>
+        </div>
+
+        <!-- Giant Headline -->
+        <h1 id="hero-title-heading" class="hero-title">
+          SURIYAA <span class="hero-title-accent">R</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle">
+          Web Technology Consultant | B.Tech IT
+        </p>
+
+        <!-- Consultant Mission Statement Card -->
+        <div class="hero-statement-card">
+          <p class="hero-statement-text">
+            Evaluating emerging web technologies, advising on architectural trade-offs, and guiding scalable front-end and robust back-end implementation.
+          </p>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+            View Projects
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="btn btn-black" id="btn-hero-contact">
+            Contact Me
+          </a>
+          <a href="assets/resume.pdf" class="btn" id="btn-hero-resume" download="Suriyaa_R_Resume.pdf">
+            Download Resume (PDF)
+          </a>
+        </div>
+
+        <!-- Brutalist Hero Metrics / Highlights -->
+        <div class="grid-12 hero-stats-row">
+          <div class="stat-card">
+            <span class="stat-number">8.29</span>
+            <span class="stat-label">CGPA / 10 — B.Tech IT at KRCT</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">VP</span>
+            <span class="stat-label">IT Department Student Body</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2026</span>
+            <span class="stat-label">Graduation Year &amp; Available Now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 2: PROJECTS & CASE STUDIES
+         Brutalist structure + Health Risk Predictor as Featured Glass Card
+         =================================================================== -->
+    <section id="projects" class="section-block" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Case Studies</span>
+          <h2 id="projects-heading" class="section-title">Projects &amp; Solutions</h2>
+          <p class="section-subtitle">
+            Explore engineering implementations evaluated for system design, database efficiency, and future web scalability.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- -------------------------------------------------------------
+               GLASS ACCENT 2 OF 3: FEATURED PROJECT CARD
+               - Backdrop filter: blur(14px)
+               - Placed over bold electric blue shape
+               - CRITICAL RULE: Body text sits on SOLID background inside card!
+               ------------------------------------------------------------- -->
+          <article class="featured-glass-wrapper" aria-labelledby="project-health-title">
+            <div class="featured-flag">
+              <span aria-hidden="true">★</span> Featured Architectural Project
+            </div>
+
+            <div class="glass-featured-card">
+              <div class="glass-header-bar">
+                <h3 id="project-health-title" class="featured-headline">
+                  Health Risk Predictor System
+                </h3>
+                <span class="project-status">Ongoing • Java Core to Web</span>
+              </div>
+
+              <!-- SOLID WHITE CONTAINER FOR BODY TEXT (Never paragraph text on raw glass) -->
+              <div class="glass-solid-content">
+                <p>
+                  High-throughput console application that predicts personalized health risk levels with deterministic, rule-based algorithmic analysis. Designed with modular OOP principles and currently being architected for migration into a distributed, reactive web platform.
+                </p>
+                <div class="consultant-callout">
+                  <strong>Consultant Perspective:</strong> Prioritizing explainable deterministic scoring rules over black-box heuristics for auditability before cloud API transition.
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Rule-based Analysis</span>
+                <span class="tech-tag">OOP Architecture</span>
+                <span class="tech-tag">Web Migration Roadmap</span>
+                <span class="tech-tag">REST API Ready</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" 
+                        class="btn btn-sm btn-black open-case-study-btn" 
+                        data-project="health-risk"
+                        aria-haspopup="dialog"
+                        aria-controls="caseStudyModal">
+                  Case Study Details →
+                </button>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Status: Active R&amp;D</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 2: INVENTORY MANAGEMENT SYSTEM (BRUTALIST SOLID)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" aria-labelledby="project-inventory-title">
+            <div class="project-card-header">
+              <span class="project-badge">Enterprise Full-Stack</span>
+              <span class="tech-tag">PHP / MySQL</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-inventory-title" class="project-title">
+                Inventory Management System
+              </h3>
+              
+              <p class="project-desc">
+                Comprehensive stock control solution that tracks warehouse supplies, manages vendor relationships, automates inventory adjustments, prevents stockout errors, and delivers actionable real-time business insights for operational management.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Relational Modeling</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" 
+                        class="btn btn-sm btn-black open-case-study-btn" 
+                        data-project="inventory"
+                        aria-haspopup="dialog"
+                        aria-controls="caseStudyModal">
+                  Case Study Details →
+                </button>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Production Ready</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 3: MOVIE TICKET BOOKING SIMULATOR (BRUTALIST SOLID)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" aria-labelledby="project-movie-title">
+            <div class="project-card-header">
+              <span class="project-badge">Systems Simulation</span>
+              <span class="tech-tag">Java Core</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-movie-title" class="project-title">
+                Movie Ticket Booking Simulator
+              </h3>
+
+              <p class="project-desc">
+                End-to-end cinema reservation workflow simulation. Allows patrons to browse movies, check real-time screen schedules, reserve individual seating maps, simulate secure checkout pipelines, and generate instant transactional confirmations.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Object Modeling</span>
+                <span class="tech-tag">Concurrency</span>
+                <span class="tech-tag">Transaction Logic</span>
+              </div>
+
+              <div class="project-card-footer">
+                <button type="button" 
+                        class="btn btn-sm btn-black open-case-study-btn" 
+                        data-project="movie-ticket"
+                        aria-haspopup="dialog"
+                        aria-controls="caseStudyModal">
+                  Case Study Details →
+                </button>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">System Verified</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: TECHNICAL SKILLS & CONSULTING TOOLKIT
+         12-column grouped brutalist blocks with trade-off insights.
+         =================================================================== -->
+    <section id="skills" class="section-block" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 id="skills-heading" class="section-title">Technical Skills &amp; Stack</h2>
+          <p class="section-subtitle">
+            Categorized capabilities evaluated across language runtime performance, architectural flexibility, and team productivity.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+
+          <!-- 1. Languages -->
+          <article class="skill-category-card" aria-labelledby="skill-lang-title">
+            <div class="skill-card-head">
+              <h3 id="skill-lang-title" class="skill-card-title">Languages</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">C / C++</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">SQL</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Versed in low-level memory concepts (C/C++) up to enterprise OOP (Java) and modern event-driven runtimes (JavaScript).
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Front-End -->
+          <article class="skill-category-card" aria-labelledby="skill-fe-title">
+            <div class="skill-card-head">
+              <h3 id="skill-fe-title" class="skill-card-title">Front-End</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">JavaScript (ES6+)</span>
+                <span class="skill-pill">Angular</span>
+                <span class="skill-pill">ReactJS</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Analyzing component lifecycle, Virtual DOM vs signals, and micro-frontend considerations for enterprise applications.
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Back-End -->
+          <article class="skill-category-card" aria-labelledby="skill-be-title">
+            <div class="skill-card-head">
+              <h3 id="skill-be-title" class="skill-card-title">Back-End</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">Spring Framework</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">RESTful APIs</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Designing multi-tier server architectures, dependency injection, and reliable session/state persistence layers.
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Databases -->
+          <article class="skill-category-card" aria-labelledby="skill-db-title">
+            <div class="skill-card-head">
+              <h3 id="skill-db-title" class="skill-card-title">Databases</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">MongoDB</span>
+                <span class="skill-pill">Schema Normalization</span>
+                <span class="skill-pill">Query Optimization</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Evaluating ACID compliance vs eventual consistency when choosing relational vs document-oriented datastores.
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Cloud & DevOps -->
+          <article class="skill-category-card" aria-labelledby="skill-cloud-title">
+            <div class="skill-card-head">
+              <h3 id="skill-cloud-title" class="skill-card-title">Cloud &amp; DevOps</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">AWS</span>
+                <span class="skill-pill">AWS Lambda</span>
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">Maven</span>
+                <span class="skill-pill">CI/CD Automation</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Architecting serverless event-driven execution patterns and containerized deployment parity across environments.
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Developer Tools -->
+          <article class="skill-category-card" aria-labelledby="skill-tools-title">
+            <div class="skill-card-head">
+              <h3 id="skill-tools-title" class="skill-card-title">Tools &amp; Workflow</h3>
+              <span class="skill-icon-indicator" aria-hidden="true"></span>
+            </div>
+            <div class="skill-card-body">
+              <div class="skill-tags-list">
+                <span class="skill-pill">XAMPP</span>
+                <span class="skill-pill">WampServer</span>
+                <span class="skill-pill">JUnit</span>
+                <span class="skill-pill">Adobe Express</span>
+                <span class="skill-pill">Git &amp; GitHub</span>
+              </div>
+              <div class="skill-consultant-note">
+                <strong>Consultant Note:</strong> Leveraging rigorous unit testing (JUnit), local server emulation, and rapid design prototyping for quick iteration.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: EXPERIENCE & ACHIEVEMENTS
+         Leadership, Hackathons, and Technical Facilitation
+         =================================================================== -->
+    <section id="experience" class="section-block" aria-labelledby="experience-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Track Record</span>
+          <h2 id="experience-heading" class="section-title">Experience &amp; Milestones</h2>
+          <p class="section-subtitle">
+            Proven leadership in departmental management, competitive hackathon outcomes, and peer knowledge empowerment.
+          </p>
+        </header>
+
+        <div class="experience-layout">
+
+          <!-- Left Column: Leadership & Roles -->
+          <div class="timeline-column roles-col">
+            
+            <article class="experience-card experience-card-featured" aria-labelledby="exp-vp-title">
+              <span class="exp-date-badge">Feb 2026 – Present</span>
+              <h3 id="exp-vp-title" class="exp-role-title">Vice President of the IT Department</h3>
+              <p class="exp-org">K. Ramakrishnan College of Technology (KRCT)</p>
+              
+              <p class="exp-desc">
+                Leading the IT student department executive committee, driving technical capacity building, and coordinating enterprise-grade knowledge transfer sessions for student engineers.
+              </p>
+
+              <ul class="exp-highlights">
+                <li>Spearheaded and executed a comprehensive Database Administration Workshop for 40–50 students, delivering hands-on SQL query tuning and relational modeling fundamentals.</li>
+                <li>Acted as primary liaison between faculty leadership and 200+ students for technical initiative planning.</li>
+                <li>Championed peer technical clinics to elevate batch programming competencies.</li>
+              </ul>
+            </article>
+
+            <article class="experience-card" aria-labelledby="exp-peer-title">
+              <span class="exp-date-badge">Academic Term Initiative</span>
+              <h3 id="exp-peer-title" class="exp-role-title">Lead Facilitator: Peer Learning Session</h3>
+              <p class="exp-org">C Programming Clinic</p>
+              
+              <p class="exp-desc">
+                Conducted deep-dive instructional sessions breaking down pointers, memory allocation, and algorithmic problem-solving in C for junior undergraduate peers.
+              </p>
+            </article>
+
+            <article class="experience-card" aria-labelledby="exp-symp-title">
+              <span class="exp-date-badge">Institutional Leadership</span>
+              <h3 id="exp-symp-title" class="exp-role-title">Technical Symposium Event Organizer</h3>
+              <p class="exp-org">College-wide Technical Fest, KRCT</p>
+              
+              <p class="exp-desc">
+                Orchestrated end-to-end logistics, competitive programming problem curation, and judge panel coordination for state-level college participants.
+              </p>
+            </article>
+
+          </div>
+
+          <!-- Right Column: Achievements & Honors -->
+          <div class="timeline-column achievements-col">
+            
+            <div style="margin-bottom: 1rem;">
+              <h3 style="font-size: 1.35rem; font-weight: 800; text-transform: uppercase;">Key Honors &amp; Awards</h3>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-rank-badge" aria-hidden="true">🏆</div>
+              <div class="achievement-content">
+                <h4>Hackathon Winner (Entrepreneurship)</h4>
+                <p>Awarded 1st place for pitching and architecting an innovative technology business model validated against real customer market demand.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-rank-badge" aria-hidden="true">5th</div>
+              <div class="achievement-content">
+                <h4>5th Place / 30 Teams — AICTE IDE Bootcamp</h4>
+                <p>Secured rank 5 at the rigorous 5-Day Innovation, Design &amp; Entrepreneurship (IDE) Bootcamp, developing rapid prototypes under strict sprint constraints.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-rank-badge" aria-hidden="true">★</div>
+              <div class="achievement-content">
+                <h4>Smart India Hackathon (SIH 2025) Participant</h4>
+                <p>Collaborated in building national-scale solution proposals addressing critical governmental problem statements through digital web systems.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card">
+              <div class="achievement-rank-badge" aria-hidden="true">⚙</div>
+              <div class="achievement-content">
+                <h4>Technical Symposium Organizer &amp; Jury</h4>
+                <p>Designed challenge benchmarks and judged coding contests, reinforcing clear code standards and architectural principles.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: EDUCATION
+         =================================================================== -->
+    <section id="education" class="section-block" aria-labelledby="education-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Academics</span>
+          <h2 id="education-heading" class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Strong computer science foundations grounded in systems programming, data structures, and distributed web platforms.
+          </p>
+        </header>
+
+        <div class="education-wrapper">
+          <article class="education-card" aria-labelledby="edu-degree-heading">
+            <div class="education-main">
+              <h3 id="edu-degree-heading" class="edu-degree">
+                B.Tech in Information Technology
+              </h3>
+              <p class="edu-institution">
+                K. Ramakrishnan College of Technology (KRCT)
+              </p>
+              <p class="edu-description">
+                Comprehensive curriculum focusing on Web Technology Architectures, Relational Database Management Systems (RDBMS), Object-Oriented Software Engineering, Operating Systems, and Cloud Computing infrastructures. Active student leader bridging academic theory with industry consultant practices.
+              </p>
+            </div>
+
+            <div class="education-meta">
+              <div class="cgpa-box">
+                <div class="cgpa-value">8.29</div>
+                <div class="cgpa-scale">/ 10.0 CGPA</div>
+                <div class="cgpa-label">Cumulative Academic Record</div>
+              </div>
+              <div style="font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; text-align: center; border: var(--border-thin); padding: 0.5rem; background-color: var(--color-surface);">
+                Graduation: Class of 2026
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 6: CONTACT & CONSULTATION INQUIRY
+         Direct channels + Resume download + Contact form triggering Glass Modal
+         =================================================================== -->
+    <section id="contact" class="section-block" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Contact &amp; Consult</h2>
+          <p class="section-subtitle">
+            Have a project to architect, an internship or full-time opportunity, or want to discuss web technology trade-offs? Let’s connect.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Direct Communication Channels -->
+          <div class="contact-info-col">
+            
+            <div class="direct-channels-card">
+              <h3 class="channels-title">Direct Channels</h3>
+              
+              <div class="channel-list">
+
+                <!-- Email -->
+                <div class="channel-item">
+                  <div class="channel-label-group">
+                    <span class="channel-type">Email</span>
+                    <a href="mailto:suriyaar.ace@gmail.com" class="channel-value" title="Email Suriyaa R">
+                      suriyaar.ace@gmail.com
+                    </a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy="suriyaar.ace@gmail.com" aria-label="Copy email address">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="channel-item">
+                  <div class="channel-label-group">
+                    <span class="channel-type">Phone</span>
+                    <a href="tel:+918610609215" class="channel-value" title="Call Suriyaa R">
+                      +91 8610609215
+                    </a>
+                  </div>
+                  <button type="button" class="copy-btn" data-copy="+918610609215" aria-label="Copy phone number">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- GitHub -->
+                <div class="channel-item">
+                  <div class="channel-label-group">
+                    <span class="channel-type">GitHub</span>
+                    <a href="https://github.com/SURIYAA-R" target="_blank" rel="noopener noreferrer" class="channel-value">
+                      github.com/SURIYAA-R
+                    </a>
+                  </div>
+                  <a href="https://github.com/SURIYAA-R" target="_blank" rel="noopener noreferrer" class="copy-btn" style="text-decoration:none;" aria-label="Open GitHub profile">
+                    Visit ↗
+                  </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="channel-item">
+                  <div class="channel-label-group">
+                    <span class="channel-type">LinkedIn</span>
+                    <a href="https://linkedin.com/in/SuriyaaRaja" target="_blank" rel="noopener noreferrer" class="channel-value">
+                      linkedin.com/in/SuriyaaRaja
+                    </a>
+                  </div>
+                  <a href="https://linkedin.com/in/SuriyaaRaja" target="_blank" rel="noopener noreferrer" class="copy-btn" style="text-decoration:none;" aria-label="Open LinkedIn profile">
+                    Visit ↗
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Resume Download Box -->
+              <div class="resume-download-box">
+                <h3>Curriculum Vitae</h3>
+                <p>Download comprehensive PDF detailing academic history, system design coursework, and tech leadership credentials.</p>
+                <a href="assets/resume.pdf" class="btn btn-sm btn-black" download="Suriyaa_R_Resume.pdf" style="width:100%;">
+                  Download Resume (PDF) ↓
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Column: Consultation Contact Form -->
+          <div class="contact-form-col">
+            <div class="contact-form-card">
+              <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.25rem; text-transform: uppercase;">
+                Send a Message
+              </h3>
+
+              <form id="contactForm" novalidate>
+                
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name *</label>
+                  <input type="text" 
+                         id="form-name" 
+                         name="name" 
+                         class="form-input" 
+                         placeholder="e.g. Alex Mercer" 
+                         required 
+                         aria-required="true">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address *</label>
+                  <input type="email" 
+                         id="form-email" 
+                         name="email" 
+                         class="form-input" 
+                         placeholder="e.g. alex@company.com" 
+                         required 
+                         aria-required="true">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Subject / Purpose *</label>
+                  <select id="form-subject" name="subject" class="form-select" required aria-required="true">
+                    <option value="">Select consultation scope...</option>
+                    <option value="Web Consulting & Architecture">Web Technology Consulting</option>
+                    <option value="Hiring / Full-Time Opportunity">Hiring / Role Opportunity</option>
+                    <option value="Project Collaboration">Engineering Collaboration</option>
+                    <option value="General Inquiry">General Networking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message Details *</label>
+                  <textarea id="form-message" 
+                            name="message" 
+                            class="form-textarea" 
+                            placeholder="Describe your technical requirements, team needs, or inquiries..." 
+                            required 
+                            aria-required="true"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">
+                  Send Consultation Inquiry →
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>SURIYAA R</h2>
+          <p>Web Technology Consultant | B.Tech Information Technology</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#hero" class="footer-nav-link">Home</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#experience" class="footer-nav-link">Experience</a>
+          <a href="#education" class="footer-nav-link">Education</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Suriyaa R. Built with Glass Brutalism, Semantic HTML &amp; Vanilla JS.
+        </div>
+        <div>
+          K. Ramakrishnan College of Technology (KRCT)
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       GLASS ACCENT 3 OF 3: CONTACT SUBMISSION SUCCESS MODAL
+       - Backdrop-filter: blur(14px)
+       - Placed over bold electric blue shape
+       - CRITICAL RULE: Body text sits on SOLID background inside dialog!
+       ===================================================================== -->
+  <div class="modal-overlay" id="contactModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-accent-wrapper">
+      <div class="glass-modal">
+        
+        <div class="modal-header">
+          <h3 id="modalTitle" class="modal-title">Inquiry Received</h3>
+          <button type="button" class="modal-close-btn" id="closeContactModalBtn" aria-label="Close confirmation modal">
+            &times;
+          </button>
+        </div>
+
+        <!-- SOLID BACKGROUND CONTAINER FOR MODAL BODY TEXT -->
+        <div class="modal-solid-body">
+          <p>
+            Thank you, <strong id="modalSenderName">Colleague</strong>! Your consultation request has been recorded.
+          </p>
+          <p>
+            I will review your project requirements and respond to <strong id="modalSenderEmail">your email</strong> promptly.
+          </p>
+          <div class="modal-message-preview">
+            <strong>Subject:</strong> <span id="modalSenderSubject">Consulting Inquiry</span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end;">
+          <button type="button" class="btn btn-sm btn-black" id="modalDismissBtn">
+            Done &amp; Close
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       CASE-STUDY DETAILS MODAL (SOLID BRUTALIST STRUCTURE)
+       Note: backdrop-filter is strictly limited to the 3 required elements.
+       This case study reader uses crisp solid brutalist structure.
+       ===================================================================== -->
+  <div class="casestudy-modal-overlay" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="caseStudyTitle" aria-hidden="true">
+    <div class="casestudy-dialog">
+      
+      <div class="casestudy-header">
+        <h3 id="caseStudyTitle">Case Study Overview</h3>
+        <button type="button" class="casestudy-close-btn" id="closeCaseStudyBtn" aria-label="Close case study dialog">
+          &times;
+        </button>
+      </div>
+
+      <div class="casestudy-body" id="caseStudyContent">
+        <!-- Injected via JavaScript based on chosen project -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Application Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
