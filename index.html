@@ -168,7 +168,7 @@
             </div>
             <div class="git-live-indicator" id="gitSyncStatus">
               <span class="role-pulse" aria-hidden="true"></span>
-              <span>GitHub: SURIYAA-R • 8 Repositories</span>
+              <span>GitHub: SURIYAA-R • 7 Repositories</span>
             </div>
           </div>
           <p class="section-subtitle">
@@ -418,54 +418,7 @@
           </article>
 
           <!-- -------------------------------------------------------------
-               PROJECT CARD 6: PORTFOLIO SHOWCASE (GitHub: PORTFOLIO)
-               ------------------------------------------------------------- -->
-          <article class="project-card standard-card" id="repo-card-PORTFOLIO" data-repo="PORTFOLIO" aria-labelledby="project-portfolio-title">
-            <div class="project-card-header">
-              <span class="project-badge">Web Architecture</span>
-              <span class="tech-tag">HTML5 / Vanilla JS</span>
-            </div>
-
-            <div class="project-card-body">
-              <h3 id="project-portfolio-title" class="project-title">
-                Glass Brutalism Portfolio Architecture
-              </h3>
-              
-              <p class="project-desc">
-                High-performance portfolio platform built with zero external UI frameworks. Merges raw high-contrast brutalist borders and hard drop shadows with selective glassmorphism accents, strict keyboard accessibility, and dynamic GitHub repository synchronization.
-              </p>
-
-              <div class="project-tech-stack">
-                <span class="tech-tag">Vanilla JS</span>
-                <span class="tech-tag">CSS Custom Properties</span>
-                <span class="tech-tag">Glassmorphism</span>
-                <span class="tech-tag">GitHub API</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-
-              <div class="project-card-footer">
-                <div class="project-actions-group">
-                  <button type="button" 
-                          class="btn btn-sm btn-black open-case-study-btn" 
-                          data-project="portfolio"
-                          aria-haspopup="dialog"
-                          aria-controls="caseStudyModal">
-                    Case Study Details →
-                  </button>
-                  <a href="https://github.com/SURIYAA-R/PORTFOLIO" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View PORTFOLIO on GitHub">
-                    GitHub Repo ↗
-                  </a>
-                  <a href="https://portfolio-arancar.vercel.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View live demo of PORTFOLIO">
-                    Live Demo ↗
-                  </a>
-                </div>
-                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Vercel Live</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- -------------------------------------------------------------
-               PROJECT CARD 7: OLYTABI LANDING (GitHub: olytabi-landing)
+               PROJECT CARD 6: OLYTABI LANDING (GitHub: olytabi-landing)
                ------------------------------------------------------------- -->
           <article class="project-card standard-card" id="repo-card-olytabi-landing" data-repo="olytabi-landing" aria-labelledby="project-olytabi-title">
             <div class="project-card-header">
@@ -967,28 +920,17 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="form-subject" class="form-label">Subject / Purpose *</label>
-                  <select id="form-subject" name="subject" class="form-select" required aria-required="true">
-                    <option value="">Select consultation scope...</option>
-                    <option value="Web Consulting & Architecture">Web Technology Consulting</option>
-                    <option value="Hiring / Full-Time Opportunity">Hiring / Role Opportunity</option>
-                    <option value="Project Collaboration">Engineering Collaboration</option>
-                    <option value="General Inquiry">General Networking</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
                   <label for="form-message" class="form-label">Message Details *</label>
                   <textarea id="form-message" 
                             name="message" 
                             class="form-textarea" 
-                            placeholder="Describe your technical requirements, team needs, or inquiries..." 
+                            placeholder="Describe your project requirements, inquiries, or notes..." 
                             required 
                             aria-required="true"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%;">
-                  Send Consultation Inquiry →
+                  Send Message →
                 </button>
 
               </form>
@@ -1056,14 +998,11 @@
         <!-- SOLID BACKGROUND CONTAINER FOR MODAL BODY TEXT -->
         <div class="modal-solid-body">
           <p>
-            Thank you, <strong id="modalSenderName">Colleague</strong>! Your consultation request has been recorded.
+            Thank you, <strong id="modalSenderName">Colleague</strong>! Your message has been sent.
           </p>
           <p>
-            I will review your project requirements and respond to <strong id="modalSenderEmail">your email</strong> promptly.
+            I will review your message and respond to <strong id="modalSenderEmail">your email</strong> promptly.
           </p>
-          <div class="modal-message-preview">
-            <strong>Subject:</strong> <span id="modalSenderSubject">Consulting Inquiry</span>
-          </div>
         </div>
 
         <div style="display: flex; justify-content: flex-end;">

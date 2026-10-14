@@ -581,33 +581,41 @@ button, input, textarea, select {
    CRITICAL: Never put paragraph text on glass. Body text sits on solid backgrounds.
    -------------------------------------------------------------------------- */
 .projects-grid {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
+  width: 100%;
+  align-items: stretch;
 }
 
 /* Standard Brutalist Project Card */
 .project-card {
-  grid-column: span 12;
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 320px;
+  max-width: 100%;
   background-color: var(--color-surface);
   border: var(--border-brutal);
   box-shadow: var(--shadow-offset);
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
-@media (min-width: 1024px) {
-  .project-card.standard-card {
-    grid-column: span 6;
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 }
 
+/* Interactive Zoom In effect when mouse is on it, smooth Zoom Out on mouse leave */
 .project-card:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: var(--shadow-hover);
+  transform: scale(1.035);
+  box-shadow: 12px 12px 0 var(--color-black);
+  z-index: 10;
 }
 
 /* Card Header Banner */
@@ -724,7 +732,8 @@ button, input, textarea, select {
    - NEVER PUT PARAGRAPH TEXT ON GLASS: Body text sits on solid backgrounds!
    -------------------------------------------------------------------------- */
 .featured-glass-wrapper {
-  grid-column: span 12;
+  flex: 1 1 100%;
+  width: 100%;
   position: relative;
   /* Bold colored background shape beneath the glass card */
   background-color: var(--color-accent);
@@ -732,6 +741,15 @@ button, input, textarea, select {
   box-shadow: var(--shadow-offset);
   padding: 1.5rem;
   overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Interactive Zoom In effect when mouse is on it, smooth Zoom Out on mouse leave */
+.featured-glass-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 0 var(--color-black);
+  z-index: 10;
 }
 
 /* Diagonal brutalist backdrop accent pattern */
@@ -773,12 +791,12 @@ button, input, textarea, select {
   outline: 3px solid var(--color-black);
   box-shadow: 6px 6px 0 var(--color-black);
   padding: 1.5rem;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-featured-card:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: var(--shadow-hover);
+  transform: scale(1.01);
+  box-shadow: 10px 10px 0 var(--color-black);
 }
 
 .glass-header-bar {

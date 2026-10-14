@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Maternal & Infant Mortality Risk Prediction',
       badge: 'Academic AI & Data Mining Architecture',
       githubUrl: 'https://github.com/SURIYAA-R/maternal-infant-risk',
-      liveUrl: 'https://maternal-infant-risk-web.vercel.app',
+      liveUrl: 'https://maternal-ir.vercel.app',
       sections: [
         {
           heading: 'Problem',
@@ -137,30 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
 
-    'portfolio': {
-      title: 'High-Performance Glass Brutalism Portfolio Architecture',
-      badge: 'Web Architecture & Front-End Systems',
-      githubUrl: 'https://github.com/SURIYAA-R/PORTFOLIO',
-      liveUrl: 'https://portfolio-arancar.vercel.app',
-      sections: [
-        {
-          heading: 'Problem',
-          content: 'Modern portfolios often suffer from bloated JavaScript bundles, generic templates, and broken offline experiences while failing to stay dynamically in sync with the developer’s active git repositories.'
-        },
-        {
-          heading: 'Approach',
-          content: 'Engineered an accessible glass-brutalist web application combining high-contrast ink-black borders and hard drop shadows with selective glassmorphism accents, keyboard-first navigation, and real-time GitHub API integration.'
-        },
-        {
-          heading: 'Tech Choices and Why',
-          content: 'Stack: Semantic HTML5, CSS Custom Properties (CSS variables), and Vanilla JavaScript. Zero external runtime dependencies ensures lightning-fast execution and 100/100 Lighthouse performance scores.'
-        },
-        {
-          heading: 'Result',
-          content: 'Sub-300ms first contentful paint, zero framework overhead, and automated real-time synchronization with GitHub repositories while strictly enforcing privacy exclusions.'
-        }
-      ]
-    },
+
 
     'olytabi-landing': {
       title: 'Olytabi — Modern Product Showcase Page',
@@ -355,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const initGitHubSync = async () => {
     const statusEl = document.getElementById('gitSyncStatus');
     const GITHUB_USERNAME = 'SURIYAA-R';
-    const EXCLUDED_REPOS = ['PROJECT-US'];
+    const EXCLUDED_REPOS = ['PROJECT-US', 'PORTFOLIO'];
 
     try {
       const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`, {
@@ -411,13 +388,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDismissBtn = document.getElementById('modalDismissBtn');
   const modalSenderName = document.getElementById('modalSenderName');
   const modalSenderEmail = document.getElementById('modalSenderEmail');
-  const modalSenderSubject = document.getElementById('modalSenderSubject');
 
-  const openContactModal = (name, email, subject) => {
+  const openContactModal = (name, email) => {
     lastActiveElement = document.activeElement;
     if (modalSenderName) modalSenderName.textContent = name || 'Colleague';
     if (modalSenderEmail) modalSenderEmail.textContent = email || 'your email address';
-    if (modalSenderSubject) modalSenderSubject.textContent = subject || 'Consultation Inquiry';
 
     contactModalOverlay.classList.add('active');
     contactModalOverlay.setAttribute('aria-hidden', 'false');
@@ -444,7 +419,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const nameInput = document.getElementById('form-name');
       const emailInput = document.getElementById('form-email');
-      const subjectInput = document.getElementById('form-subject');
       const messageInput = document.getElementById('form-message');
 
       // Basic client-side validation
@@ -460,27 +434,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      if (!subjectInput.value.trim()) {
-        alert('Please select a subject or consultation scope.');
-        subjectInput.focus();
-        return;
-      }
-
       if (!messageInput.value.trim()) {
-        alert('Please provide some project or inquiry details.');
+        alert('Please provide your message details.');
         messageInput.focus();
         return;
       }
 
       const senderName = nameInput.value.trim();
       const senderEmail = emailInput.value.trim();
-      const senderSubject = subjectInput.value.trim();
 
       // Reset form fields
       contactForm.reset();
 
       // Launch Glass Accent Modal
-      openContactModal(senderName, senderEmail, senderSubject);
+      openContactModal(senderName, senderEmail);
     });
   }
 
