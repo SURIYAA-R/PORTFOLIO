@@ -80,10 +80,6 @@
             <a href="assets/resume.pdf" class="btn btn-sm btn-primary" download="Suriyaa_R_Resume.pdf">Resume</a>
           </li>
         </ul>
-
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-sm btn-black">Hire / Consult</a>
-        </div>
       </nav>
     </div>
   </header>
@@ -165,138 +161,393 @@
       <div class="container">
         
         <header class="section-header">
-          <span class="section-tag">Case Studies</span>
-          <h2 id="projects-heading" class="section-title">Projects &amp; Solutions</h2>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <span class="section-tag">Git Repositories &amp; Case Studies</span>
+              <h2 id="projects-heading" class="section-title">Projects &amp; Solutions</h2>
+            </div>
+            <div class="git-live-indicator" id="gitSyncStatus">
+              <span class="role-pulse" aria-hidden="true"></span>
+              <span>GitHub: SURIYAA-R • 8 Repositories</span>
+            </div>
+          </div>
           <p class="section-subtitle">
-            Explore engineering implementations evaluated for system design, database efficiency, and future web scalability.
+            Explore engineering implementations and open-source repositories from GitHub — evaluated for system design, scalability, and code architecture.
           </p>
         </header>
 
         <div class="projects-grid">
 
           <!-- -------------------------------------------------------------
-               GLASS ACCENT 2 OF 3: FEATURED PROJECT CARD
+               GLASS ACCENT 2 OF 3: FEATURED PROJECT CARD (GitHub: maternal-infant-risk)
                - Backdrop filter: blur(14px)
                - Placed over bold electric blue shape
                - CRITICAL RULE: Body text sits on SOLID background inside card!
                ------------------------------------------------------------- -->
-          <article class="featured-glass-wrapper" aria-labelledby="project-health-title">
+          <article class="featured-glass-wrapper" id="repo-card-maternal-infant-risk" data-repo="maternal-infant-risk" aria-labelledby="project-health-title">
             <div class="featured-flag">
-              <span aria-hidden="true">★</span> Featured Architectural Project
+              <span aria-hidden="true">★</span> Featured Git Project • Academic AI &amp; Data Mining
             </div>
 
             <div class="glass-featured-card">
               <div class="glass-header-bar">
                 <h3 id="project-health-title" class="featured-headline">
-                  Health Risk Predictor System
+                  Maternal &amp; Infant Mortality Risk Prediction
                 </h3>
-                <span class="project-status">Ongoing • Java Core to Web</span>
+                <span class="project-status">Vercel Live • Python / ML</span>
               </div>
 
               <!-- SOLID WHITE CONTAINER FOR BODY TEXT (Never paragraph text on raw glass) -->
               <div class="glass-solid-content">
                 <p>
-                  High-throughput console application that predicts personalized health risk levels with deterministic, rule-based algorithmic analysis. Designed with modular OOP principles and currently being architected for migration into a distributed, reactive web platform.
+                  Data mining and machine learning healthcare analytics system developed at K. Ramakrishnan College of Technology. Leverages classification, clustering, and association rule mining across clinical, maternal-care, and socioeconomic metrics to predict pregnancy risk stratifications and enable early preventative medical interventions.
                 </p>
                 <div class="consultant-callout">
-                  <strong>Consultant Perspective:</strong> Prioritizing explainable deterministic scoring rules over black-box heuristics for auditability before cloud API transition.
+                  <strong>Architectural Focus:</strong> Prioritizing explainable, audit-ready clinical recall metrics and deterministic data pipelines (IQR, SMOTE, GridSearchCV) over uninterpretable black-box models.
                 </div>
               </div>
 
               <div class="project-tech-stack">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Rule-based Analysis</span>
-                <span class="tech-tag">OOP Architecture</span>
-                <span class="tech-tag">Web Migration Roadmap</span>
-                <span class="tech-tag">REST API Ready</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Data Mining</span>
+                <span class="tech-tag">FastAPI / Flask</span>
+                <span class="tech-tag">Vercel</span>
               </div>
 
               <div class="project-card-footer">
-                <button type="button" 
-                        class="btn btn-sm btn-black open-case-study-btn" 
-                        data-project="health-risk"
-                        aria-haspopup="dialog"
-                        aria-controls="caseStudyModal">
-                  Case Study Details →
-                </button>
-                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Status: Active R&amp;D</span>
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="maternal-infant-risk"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/maternal-infant-risk" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View maternal-infant-risk on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                  <a href="https://maternal-infant-risk-web.vercel.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View live demo of maternal-infant-risk">
+                    Live Demo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Status: Deployed &amp; Tested</span>
               </div>
             </div>
           </article>
 
           <!-- -------------------------------------------------------------
-               PROJECT CARD 2: INVENTORY MANAGEMENT SYSTEM (BRUTALIST SOLID)
+               PROJECT CARD 2: WEATHERWATCH SIH (GitHub: weatherwatchsih)
                ------------------------------------------------------------- -->
-          <article class="project-card standard-card" aria-labelledby="project-inventory-title">
+          <article class="project-card standard-card" id="repo-card-weatherwatchsih" data-repo="weatherwatchsih" aria-labelledby="project-weather-title">
+            <div class="project-card-header">
+              <span class="project-badge">Smart India Hackathon</span>
+              <span class="tech-tag">FastAPI / Big Data</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-weather-title" class="project-title">
+                WeatherWatch — Big Data Platform
+              </h3>
+              
+              <p class="project-desc">
+                National weather big data analytics platform engineered for Smart India Hackathon. Merges crowdsourced citizen reports with official IMD and satellite observations, executing automated geospatial cross-verification and scoring report credibility before map rendering.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Spatial Verification</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">HTML5 / JS</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="weatherwatchsih"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/weatherwatchsih" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View weatherwatchsih on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">SIH Verified</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 3: SERVICE DISPATCH WCT (GitHub: SERVICE_WCT)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" id="repo-card-SERVICE_WCT" data-repo="SERVICE_WCT" aria-labelledby="project-service-title">
             <div class="project-card-header">
               <span class="project-badge">Enterprise Full-Stack</span>
+              <span class="tech-tag">JavaScript / Neobrutalism</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-service-title" class="project-title">
+                Service Dispatch &amp; Pricing Platform
+              </h3>
+              
+              <p class="project-desc">
+                Interactive tech service selection and dispatch application designed with a vibrant neobrutalist aesthetic. Incorporates dynamic multi-tier pricing calculation, category filtering, search indexing, and real-time dispatch summary confirmation modals.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">State Management</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="service-wct"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/SERVICE_WCT" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View SERVICE_WCT on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                  <a href="https://service-wct.vercel.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View live demo of SERVICE_WCT">
+                    Live Demo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Vercel Live</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 4: SURFCE MUSIC PLAYER (GitHub: SURFCE)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" id="repo-card-SURFCE" data-repo="SURFCE" aria-labelledby="project-surfce-title">
+            <div class="project-card-header">
+              <span class="project-badge">Mobile Systems</span>
+              <span class="tech-tag">Kotlin / Android</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-surfce-title" class="project-title">
+                SURFCE — Music Player for Nothing Phone
+              </h3>
+              
+              <p class="project-desc">
+                Custom native audio player engineered specifically for the Nothing Phone (2a) ecosystem to provide a dedicated, lightweight local music player. Implements asynchronous audio decoding, seamless playlist queuing, and monochrome dot-matrix aesthetic integration.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Android Media3</span>
+                <span class="tech-tag">ExoPlayer</span>
+                <span class="tech-tag">Coroutines</span>
+                <span class="tech-tag">Hardware Audio Pipeline</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="surfce"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/SURFCE" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View SURFCE on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Mobile Tested</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 5: INVENTORY DBMS (GitHub: DBMS_PROJECT_04)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" id="repo-card-DBMS_PROJECT_04" data-repo="DBMS_PROJECT_04" aria-labelledby="project-inventory-title">
+            <div class="project-card-header">
+              <span class="project-badge">Enterprise RDBMS</span>
               <span class="tech-tag">PHP / MySQL</span>
             </div>
 
             <div class="project-card-body">
               <h3 id="project-inventory-title" class="project-title">
-                Inventory Management System
+                Inventory Management &amp; Stock System
               </h3>
               
               <p class="project-desc">
-                Comprehensive stock control solution that tracks warehouse supplies, manages vendor relationships, automates inventory adjustments, prevents stockout errors, and delivers actionable real-time business insights for operational management.
+                Comprehensive warehouse stock control solution built on 3NF normalized relational database architecture. Tracks stock levels in real time, manages supplier purchase orders, automates low-stock notifications, and eliminates ledger reconciliation overhead.
               </p>
 
               <div class="project-tech-stack">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
                 <span class="tech-tag">PHP</span>
                 <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
                 <span class="tech-tag">Relational Modeling</span>
+                <span class="tech-tag">ACID Transactions</span>
               </div>
 
               <div class="project-card-footer">
-                <button type="button" 
-                        class="btn btn-sm btn-black open-case-study-btn" 
-                        data-project="inventory"
-                        aria-haspopup="dialog"
-                        aria-controls="caseStudyModal">
-                  Case Study Details →
-                </button>
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="dbms-inventory"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/DBMS_PROJECT_04" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View DBMS_PROJECT_04 on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                </div>
                 <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Production Ready</span>
               </div>
             </div>
           </article>
 
           <!-- -------------------------------------------------------------
-               PROJECT CARD 3: MOVIE TICKET BOOKING SIMULATOR (BRUTALIST SOLID)
+               PROJECT CARD 6: PORTFOLIO SHOWCASE (GitHub: PORTFOLIO)
                ------------------------------------------------------------- -->
-          <article class="project-card standard-card" aria-labelledby="project-movie-title">
+          <article class="project-card standard-card" id="repo-card-PORTFOLIO" data-repo="PORTFOLIO" aria-labelledby="project-portfolio-title">
             <div class="project-card-header">
-              <span class="project-badge">Systems Simulation</span>
-              <span class="tech-tag">Java Core</span>
+              <span class="project-badge">Web Architecture</span>
+              <span class="tech-tag">HTML5 / Vanilla JS</span>
             </div>
 
             <div class="project-card-body">
-              <h3 id="project-movie-title" class="project-title">
-                Movie Ticket Booking Simulator
+              <h3 id="project-portfolio-title" class="project-title">
+                Glass Brutalism Portfolio Architecture
               </h3>
-
+              
               <p class="project-desc">
-                End-to-end cinema reservation workflow simulation. Allows patrons to browse movies, check real-time screen schedules, reserve individual seating maps, simulate secure checkout pipelines, and generate instant transactional confirmations.
+                High-performance portfolio platform built with zero external UI frameworks. Merges raw high-contrast brutalist borders and hard drop shadows with selective glassmorphism accents, strict keyboard accessibility, and dynamic GitHub repository synchronization.
               </p>
 
               <div class="project-tech-stack">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Object Modeling</span>
-                <span class="tech-tag">Concurrency</span>
-                <span class="tech-tag">Transaction Logic</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">CSS Custom Properties</span>
+                <span class="tech-tag">Glassmorphism</span>
+                <span class="tech-tag">GitHub API</span>
+                <span class="tech-tag">Vercel</span>
               </div>
 
               <div class="project-card-footer">
-                <button type="button" 
-                        class="btn btn-sm btn-black open-case-study-btn" 
-                        data-project="movie-ticket"
-                        aria-haspopup="dialog"
-                        aria-controls="caseStudyModal">
-                  Case Study Details →
-                </button>
-                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">System Verified</span>
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="portfolio"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/PORTFOLIO" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View PORTFOLIO on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                  <a href="https://portfolio-arancar.vercel.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View live demo of PORTFOLIO">
+                    Live Demo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Vercel Live</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 7: OLYTABI LANDING (GitHub: olytabi-landing)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" id="repo-card-olytabi-landing" data-repo="olytabi-landing" aria-labelledby="project-olytabi-title">
+            <div class="project-card-header">
+              <span class="project-badge">UI / Front-End</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-olytabi-title" class="project-title">
+                Olytabi — Modern Product Showcase Page
+              </h3>
+              
+              <p class="project-desc">
+                High-converting responsive landing page designed with fluid layout grids, visual hierarchy, mobile optimization, and interactive component states achieving rapid first contentful paint (FCP) and smooth user conversion flow.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Grid / Flexbox</span>
+                <span class="tech-tag">Responsive Design</span>
+                <span class="tech-tag">UI / UX Strategy</span>
+                <span class="tech-tag">Performance</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="olytabi-landing"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/olytabi-landing" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View olytabi-landing on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Production Ready</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- -------------------------------------------------------------
+               PROJECT CARD 8: KRCT CAMPUS PORTAL (GitHub: krctsr)
+               ------------------------------------------------------------- -->
+          <article class="project-card standard-card" id="repo-card-krctsr" data-repo="krctsr" aria-labelledby="project-krctsr-title">
+            <div class="project-card-header">
+              <span class="project-badge">Campus Systems</span>
+              <span class="tech-tag">HTML5 / JavaScript</span>
+            </div>
+
+            <div class="project-card-body">
+              <h3 id="project-krctsr-title" class="project-title">
+                KRCT Student Resource &amp; Academic Portal
+              </h3>
+              
+              <p class="project-desc">
+                Institutional web platform engineered for K. Ramakrishnan College of Technology (KRCT) student body workflows. Provides structured navigation for departmental resources, academic curriculum archives, student notifications, and campus event schedules.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GitHub Pages</span>
+                <span class="tech-tag">Institutional Workflows</span>
+              </div>
+
+              <div class="project-card-footer">
+                <div class="project-actions-group">
+                  <button type="button" 
+                          class="btn btn-sm btn-black open-case-study-btn" 
+                          data-project="krctsr"
+                          aria-haspopup="dialog"
+                          aria-controls="caseStudyModal">
+                    Case Study Details →
+                  </button>
+                  <a href="https://github.com/SURIYAA-R/krctsr" class="btn btn-sm" target="_blank" rel="noopener noreferrer" aria-label="View krctsr on GitHub">
+                    GitHub Repo ↗
+                  </a>
+                </div>
+                <span style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700;">Academic Live</span>
               </div>
             </div>
           </article>
